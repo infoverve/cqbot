@@ -19,16 +19,16 @@ export const LogIn = () => {
             <AvatarImage src={"ai-icon.png"} />
           </Avatar>
           <span>
-            Azure<span className="text-muted-foreground">ChatGPT</span>
+            CQ<span className="text-muted-foreground">Bot!</span>
           </span>
         </CardTitle>
         <CardDescription>
-          Login in with your GitHub or Microsoft 365 account
+          Welcome to CQBot! Please sign in to continue.
         </CardDescription>
       </CardHeader>
       <CardContent className="grid gap-4">
         <Button onClick={() => signIn("github")}>GitHub</Button>
-        <Button onClick={() => signIn("azure-ad")}> Microsoft 365</Button>
+        <Button onClick={() => signIn("azure-ad")}>Microsoft</Button>
       </CardContent>
     </Card>
   );

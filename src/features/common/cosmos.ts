@@ -1,8 +1,8 @@
 "use server";
 import { CosmosClient } from "@azure/cosmos";
 
-const DB_NAME = "chat";
-const CONTAINER_NAME = "history";
+const DB_NAME = process.env.AZURE_COSMOSDB_DB_NAME || "chat";
+const CONTAINER_NAME = process.env.AZURE_COSMOSDB_CONTAINER_NAME || "history";
 
 export const memoryContainer = async () => {
   const endpoint = process.env.AZURE_COSMOSDB_URI!;
